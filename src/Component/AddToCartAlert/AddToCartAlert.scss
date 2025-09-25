@@ -1,0 +1,97 @@
+.cardAlert {
+    .gotocart {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17.5px;
+        text-align: left;
+        color: #5D1CAA;
+        text-decoration: none;
+    }
+
+    .alert-container {
+        position: fixed;
+        top: 50px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 999999999999999999999;
+        animation: slide-down 0.5s ease-out forwards, slide-up 0.5s ease-in 2.5s forwards;
+
+    }
+
+    @keyframes slide-down {
+        0% {
+            transform: translate(-50%, -100px);
+        }
+
+        100% {
+            transform: translate(-50%, 0);
+        }
+    }
+
+    @keyframes slide-up {
+        0% {
+            transform: translate(-50%, 0);
+        }
+
+        100% {
+            transform: translate(-50%, -100px);
+        }
+    }
+
+    .alert {
+        width: auto;
+        height: auto;
+        display: flex;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 5px;
+
+        .filled-fav-icon {
+            font-size: 20px;
+            color: #108548;
+        }
+
+        p {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 0 !important;
+            text-align: left;
+            color: #111111;
+        }
+
+        .close-btn {
+            cursor: pointer;
+        }
+    }
+
+    @media (max-width:576px) {
+        .alert {
+            width: 250px !important;
+            height: auto;
+        }
+
+        p {
+            font-family: Roboto;
+            font-size: 10px !important;
+            font-weight: 600;
+            margin-bottom: 0 !important;
+            text-align: left;
+            color: #111111;
+        }
+
+        .gotocart {
+            font-family: Roboto;
+            font-size: 10px;
+            font-weight: 600;
+            line-height: 17.5px;
+            text-align: left;
+            color: #02400C;
+            text-decoration: none;
+        }
+    }
+}

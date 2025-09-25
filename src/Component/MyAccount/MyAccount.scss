@@ -1,0 +1,39 @@
+.MyAccountMainWrapper {
+    .my-ac-left{
+        width: 20%;
+        position: sticky;
+        max-height: 100vh;
+        top: 8rem;
+    }
+    .my-account {
+        margin-top: 7rem;
+        display: flex;
+
+        .my-ac-right {
+            width: 80%;
+            padding: 2rem;
+            // max-height: 2000px;
+        }
+    }
+
+    @media(max-width:1200px) {
+        .my-account {
+            margin-top: 0 !important;
+            display: block;
+            position: relative !important;
+        }
+        .my-ac-left{
+          z-index: 999999999999999999999999 !important;
+        }
+        .my-ac-right {
+            width: 100% !important;
+            padding: 1rem !important;
+            padding-top: 3rem !important;
+        }
+
+    }
+    @media(max-width:576px) {
+        padding-top: 6rem;
+    }
+
+}

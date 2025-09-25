@@ -1,0 +1,489 @@
+.FeaturedBrandsMailWrapper {
+    .FeaturedBrands {
+        padding-top: 120px;
+        display: flex;
+a{
+    text-decoration: none;
+    color: black;
+}
+        .TopDeals-left {
+            max-height: 100vh;
+            position: sticky;
+            top: 120px;
+        }
+
+        .TopDeals-right {
+            overflow: hidden;
+            padding-bottom: 2rem;
+            padding: 1rem;
+            max-height: 1000vh;
+
+            .top-deals-heading {
+                img {
+                    margin-right: 10px;
+                }
+
+                font-family: Roboto;
+                font-size: 25px;
+                font-weight: 700;
+                line-height: 31.25px;
+                text-align: left;
+                color: black;
+            }
+
+            .carousel-section {
+                padding-top: 1.5rem !important;
+
+                .top-deals-image {
+                    width: 350px;
+                    height: 350px;
+                    margin: auto;
+                    position: relative;
+                    border-radius: 5px;
+                    overflow: hidden;
+
+                    .indomeBox {
+                        padding: 0 5px;
+                        position: absolute;
+                        bottom: 10px;
+                        left: 10px;
+                        width: 176px;
+                        height: 45px;
+                        border-radius: 4px;
+                        background-color: white;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .ad {
+                            width: 30px;
+                            height: 30px;
+                            background: #CCCCCC;
+                            font-family: Roboto;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 18.75px;
+                            text-align: center;
+                            color: #717171;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        .indomie-image {
+                            width: 35px;
+                            height: 35px;
+                            background: #CCCCCC;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            img {
+                                width: 100%;
+                                border-radius: 100%;
+                            }
+                        }
+
+                        .indomie-text {
+                            font-family: Roboto;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 18.75px;
+                            text-align: center;
+                            color: #111111;
+                        }
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+       
+
+    
+        .selectBox-section {
+            padding-top: 1.5rem;
+            // display:inline-block;
+            display: flex;
+           
+            gap: .5rem;
+        }
+
+     
+
+            .sort-dropdown {
+                // width: 185px;
+                // height: 35px;
+                border-radius: 5px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px;
+                gap: 5px;
+                border: 0.5px solid #00000033;
+                cursor: pointer;
+
+                span {
+                    //styleName: Desktop (lg = <1440px)/body-md;
+                    font-family: Roboto;
+                    font-size: 13px;
+                    font-weight: 500;
+                    line-height: 18.2px;
+
+                }
+            }
+
+            .count {
+                width: 20px !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 20px;
+                border-radius: 50%;
+                background: #EFEFEF;
+                font-family: Roboto;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 18.2px;
+                color: #5D1CAA;
+            }
+
+            .dropdown-item {
+                cursor: pointer;
+            }
+
+            .product-heading-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 1.5rem;
+                .product-heading-right{
+                    
+
+                }
+
+                // padding-bottom: 1rem;
+                .brandLogo {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+
+                    .brandImage {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        background: #F8F8F8;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            width: 100%;
+                            border-radius: 100%;
+                        }
+
+                    }
+
+                    span {
+                        font-family: Roboto;
+                        font-size: 25px;
+                        font-weight: 600;
+                        line-height: 29.3px;
+                        color: #111111;
+                    }
+                }
+            }
+
+
+
+
+            .Products-main-body {
+                margin-top: 3rem;
+                margin-bottom: 2rem;
+
+                .product-card {
+                    width: 96%;
+                    // height: 416px;
+                    gap: 8px;
+                    position: relative;
+                    border-radius: 4px;
+                    border: 1px solid #F2F2F2;
+                    opacity: 0px;
+
+                    // background-color: red;
+                    .product-details {
+
+                        padding-left: 6px;
+                    }
+
+                    .best-seller {
+                        width: 73px;
+                        height: 24px;
+                        display: grid;
+                        align-items: center;
+                        justify-content: center;
+                        background: #B271F333;
+                        position: absolute;
+                        top: 2%;
+                        left: 2%;
+
+                        h5 {
+                            //styleName: Desktop (lg = <1440px)/body-xs;
+                            font-family: Roboto;
+                            font-size: 11px;
+                            font-weight: 500;
+
+                            margin: 0px !important;
+                            text-align: left;
+                            color: #5D1CAA;
+                        }
+                    }
+
+                    .favourate-icon {
+                        position: absolute;
+                        // background-color: green;
+                        display: flex;
+                        align-items: start;
+                        right: 2%;
+                        padding: 0px !important;
+                        margin: 0px !important;
+                        top: 2%;
+                        font-size: 25px;
+
+                    }
+
+                    .product-title {
+                        p {
+                            //styleName: Desktop (lg = <1440px)/body-md;
+                            font-family: Roboto;
+                            font-size: 13px;
+                            font-weight: 400;
+                            line-height: 18.2px;
+                            padding-top: 1rem;
+                            text-align: left;
+                            color: #1E3354;
+                        }
+                    }
+
+                    .product-image {
+                        height: 300px;
+                        width: 100%;
+
+
+                        img {
+                         width: 100%;
+                         height: 100%;
+                         object-fit: cover;
+                        }
+                    }
+
+                    .product-rating {
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+                        // padding-left: 10px;
+                        padding: 3px;
+                        margin: 0px 0px 6px 6px;
+                        border-radius: 5px;
+                        gap: 6px;
+                        border: 1px solid #DADADA;
+                        width: 48px;
+
+                        // background-color: green;
+                        .HiOutlineStar-icon {
+                            margin: 0 !important;
+                            // background-color: red;
+                            padding: 0px !important;
+                            font-size: 11px;
+                            color: #111111;
+                        }
+
+                        span {
+                            font-family: Roboto;
+                            font-size: 12px;
+                            font-weight: 700;
+                            line-height: 14.4px;
+                            letter-spacing: 0.02em;
+                            text-align: left;
+                            color: #111111;
+
+                        }
+                    }
+
+                    .sponsored {
+                        h4 {
+                            //styleName: Desktop (lg = <1440px)/body-xs;
+                            font-family: Roboto;
+                            font-size: 11px;
+                            font-weight: 500;
+                            line-height: 13.75px;
+                            text-align: left;
+                            color: #8C8C8C;
+
+                            padding-left: 6px;
+                        }
+                    }
+
+                    .product-price {
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                        // justify-content: space-between;
+
+                        .exact-price {
+                            h1 {
+                                font-family: Roboto;
+                                font-size: 18px;
+                                font-weight: 600;
+                                line-height: 22.5px;
+                                text-align: left;
+                                color: #111111;
+                            }
+                        }
+
+                        .before-price {
+                            h3 {
+                                font-family: Roboto;
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 16.8px;
+                                letter-spacing: 0.02em;
+
+                                text-align: left;
+
+                            }
+                        }
+
+
+                        .offer {
+                            h3 {
+                                font-family: Roboto;
+                                font-size: 14px;
+                                font-weight: 600;
+                                line-height: 16.8px;
+                                letter-spacing: 0.02em;
+                                text-align: left;
+                                color: #038A10;
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+            .slick-dots {
+                display: flex;
+                justify-content: center !important;
+                margin-top: 60px !important;
+                /* Adjust this if needed */
+                align-items: center;
+
+
+
+
+            }
+
+            /* Custom dot styles */
+            .slick-dots li {
+                margin: 0 0px;
+                /* Adjust spacing between dots */
+
+            }
+
+            .slick-dots li button {
+                width: 30px;
+                /* Adjust length */
+                height: 10px;
+                /* Adjust thickness */
+                position: relative;
+                background-color: #e0e0e0;
+                border-radius: 10px;
+                z-index: 0000;
+                padding: 0;
+                transition: background-color 0.3s ease;
+                margin-top: 90px;
+            }
+
+            .slick-dots li.slick-active button {
+                background-color: #601AB9;
+                z-index: 8 !important;
+                width: 30px;
+
+            }
+
+            .slick-dots li button:before {
+                font-size: -8px !important;
+            }
+
+            .slick-dots li button:before {
+                color: rgba(255, 255, 255, 0);
+            }
+
+        }
+    }
+
+    @media(max-width:576px) {
+
+     
+
+        .TopDeals-right{
+            .top-deals-heading{
+                margin-left: 0.8rem !important;
+                img{
+                    display: none;
+                }
+            }
+        }
+        .products-list-wrapper{
+            .product-heading-wrapper{
+                .product-heading-right{
+                    font-size: 12px !important;
+
+                    .disabled-link {
+                        pointer-events: none;
+                        opacity: 0.5;
+                        cursor: not-allowed;
+                        // display: none !important;
+                    }
+                }
+            }
+        }
+
+        .brandLogo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .brandImage {
+                width: 100px;
+                height: 100px;
+                border-radius: 100% !important;
+                background: #F8F8F8;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 60%;
+                }
+
+            }
+
+            span {
+                font-family: Roboto;
+                font-size: 19px !important;
+                font-weight: 600;
+                line-height: 29.3px;
+                color: #111111;
+            }
+        }
+
+
+    }
+}

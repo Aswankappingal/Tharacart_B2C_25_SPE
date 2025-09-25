@@ -1,0 +1,130 @@
+.ProductsMainWrapper{
+    overflow-x: hidden;
+    padding-top: 8rem;
+    .heading{
+        font-family: roboto;
+        font-size: 30px;
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+    }
+    .prod-card {
+        padding: 10px;
+        width: 90%;
+        margin: auto;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+
+        .prod-image {
+            height: 200px;
+            overflow: hidden;
+            // background-color: red;
+            margin-bottom: .5rem;
+        }
+
+        img {
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .offer-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 67px;
+            height: 25px;
+            background: #C3E6CD;
+            border: 1px solid #91D4A8;
+            border-radius: 12px;
+            font-family: Roboto;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 16px;
+            color: #24663B;
+        }
+
+        .prodDiscription {
+            font-family: Roboto;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 18.2px;
+            color: #1E3354;
+            margin-top: 10px;
+        }
+
+        .offerPrice {
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 22.5px;
+            color: #111111;
+            margin-right: 10px;
+        }
+
+        .stock {
+            color: red;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .ogPrice {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.8px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: #8C8C8C;
+            margin-right: 10px;
+        }
+
+        .offer-text {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 16.8px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: #038A10;
+        }
+
+        .ratingBox {
+            margin-top: 1rem;
+            width: 48px;
+            height: 20px;
+            border-radius: 5px;
+            border: 1px solid #DADADA;
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 14.4px;
+                letter-spacing: 0.02em;
+                color: #111111;
+            }
+
+            .star {
+                font-size: 13px;
+                color: black;
+            }
+        }
+
+        .sponserd {
+            //styleName: Desktop (lg = <1440px)/body-xs;
+            font-family: Roboto;
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 13.75px;
+            text-align: left;
+            color: #8C8C8C;
+        }
+    }
+}

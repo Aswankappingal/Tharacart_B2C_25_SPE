@@ -1,0 +1,368 @@
+.signin-main-body {
+    .signin-sub-body {
+
+        padding:3rem 3rem;
+        // background-color: violet;
+.google{
+    margin: auto !important;
+    width: 100% !important;
+    // background-color: red;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+        .signin-form-container {
+            width: 393px;
+            margin: auto;
+            height: 690px;
+            padding: 2rem 0rem;
+            // background-color: rgba(255, 0, 0, 0.498);
+            border: 1px solid #F3F3F3;
+
+            .signin-title {
+                h1 {
+                    font-family: Roboto;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 28.13px;
+                    padding-left: 1rem;
+                    text-align: left;
+                    color: #111111;
+                    padding-bottom: 10px;
+                }
+            }
+
+            .form-section {
+                .form-inputs {
+                    padding: 0rem 1rem;
+
+                    .email-input {
+                        width: 100%;
+                        height: 48px;
+                        border: 1px solid #B3B3B3;
+                        border-radius: 10px;
+                        // padding: 1rem;
+                        padding-left: 1rem;
+                        margin-bottom: 10px;
+
+                    }
+
+                    label {
+                        font-family: Roboto;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 14.06px;
+                        text-align: left;
+                        color: #111111
+                    }
+
+                    input:focus {
+                        outline: none;
+                    }
+
+                    .password-section {
+                        border: 1px solid #B3B3B3;
+                        width: 100%;
+                        display: flex;
+                        height: 48px;
+                        border-radius: 10px;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+
+                    .password-input-section {
+                        width: 100% !important;
+                        padding: 0px !important;
+                    }
+
+                    .password-input-section input {
+                        width: 100%;
+                        border: none;
+                        padding-left: 1rem;
+                        height: 100% !important;
+                        outline: none;
+                    }
+
+                    .password-right-section {
+                        width: 14%;
+                        height: 100%;
+                        display: grid;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                    }
+
+                    .password-right-section svg {
+                        width: 24px;
+                        height: 24px;
+                    }
+
+                }
+
+                .forgot-password {
+                    padding: 0rem 1rem;
+
+                    a {
+                        text-decoration: none;
+                        font-family: Roboto;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 14.06px;
+                        text-align: left;
+                        color: #111111;
+
+                        span {
+                            font-family: Roboto;
+                            font-size: 12px;
+                            font-weight: 800 !important;
+                            line-height: 14.4px;
+                            letter-spacing: 0.02em;
+                            text-align: left;
+                            color: #5D1CAA;
+                        }
+                    }
+                }
+
+            }
+
+
+            .form-group {
+                margin-bottom: 20px;
+            }
+
+            .checkbox {
+                display: flex;
+                align-items: center;
+                margin-top: 15px !important;
+                justify-content: start;
+                padding: 0rem 1rem;
+                gap: 10px;
+
+
+            }
+
+            .checkbox input[type="checkbox"] {
+                width: 18px;
+                height: 18px;
+                accent-color: #6A1B9A;
+                /* Change the color of the checkbox */
+            }
+
+            .checkbox label {
+
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14px;
+                text-align: justified;
+                color: #787878;
+
+            }
+
+            .sign-in-btn {
+                padding: 0rem 1rem;
+
+                button {
+                    width: 100%;
+                    height: 48px;
+                    border-radius: 10px;
+                    background-color: #6A1B9A;
+                    border: none;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 22.4px;
+                    color: white;
+                    transition: .3s;
+
+                }
+                .Just_link{
+                    text-align: center;
+                    margin-top: 5px;
+                   .LInk{
+
+                        // text-decoration: none !important;
+                        color:#6A1B9A;
+                        font-size: 14px !important;
+                       
+
+                    }
+                      .LInk:hover{
+
+                        text-decoration: none !important;
+                        // color: rgb(0, 0, 0);
+                        font-size: 14px !important;
+                        // border-bottom: 0.1px solid rgba(13, 94, 235, 0.904);
+                        transition: 3s;
+                    
+                    }
+                   
+                }
+             
+                .small-btn{
+                    width: 60%;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+
+            .form-description {
+                padding: 0rem 1rem;
+
+                p {
+                    font-family: Roboto;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 19.2px;
+                    padding-top: 10px;
+                    text-align: center;
+
+                    a {
+                        color: #111111
+                    }
+
+                }
+            }
+
+            .underline-number-section {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+
+            }
+
+            .ul {
+                width: 43%;
+                border-bottom: 1px solid #F3F3F3;
+            }
+
+
+            .continue-with-google {
+                width: 93%;
+                margin: auto;
+                height: 48px;
+                background: #F4F4F4;
+                margin-bottom: 10px;
+
+                display: flex !important;
+                align-items: center;
+                gap: 1rem;
+                text-decoration: none !important;
+                border-radius: 10px;
+                justify-content: center;
+
+                .google-logo {
+                    width: 30%;
+                    // background-color: red;
+                    display: grid;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                h3 {
+                    color: #111111;
+                    margin: 0px !important;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 22.4px;
+
+
+
+
+                }
+
+            }
+
+            .continue-with-otp {
+                width: 93%;
+                margin: auto;
+                height: 48px;
+                background: #F4F4F4;
+                display: flex !important;
+                border-radius: 10px;
+                align-items: center;
+                margin-bottom: 2rem;
+                gap: 25px;
+                text-decoration: none !important;
+                justify-content: start;
+
+                .google-logo {
+                    width: 30%;
+                    // background-color: red;
+                    display: grid;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                h3 {
+                    color: #111111;
+                    margin: 0px !important;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 22.4px;
+
+
+
+
+                }
+            }
+
+            .business-buying {
+
+
+                width: 100%;
+                height: 70px;
+
+                padding-left: 20px !important;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                border-top: 1px solid #F3F3F3;
+
+                // background-color: #5D1CAA;
+                .buying-business {
+                    a {
+                        font-family: Roboto;
+                        font-size: 12px;
+                        text-decoration: none;
+                        font-weight: 500;
+                        line-height: 14.06px;
+                        color: #111111;
+
+                        text-align: left;
+
+                    }
+                }
+
+                .sign-in-to-b2b {
+                    a {
+                        font-family: Roboto;
+                        font-size: 12px;
+                        font-weight: 600;
+                        text-decoration: none;
+
+                        line-height: 14.4px;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+                        color: #5D1CAA;
+                    }
+                }
+
+            }
+        }
+    }
+
+    @media (max-width:576px) {
+        .signin-sub-body {
+            padding: 2rem 0px !important;
+        }
+
+        .signin-form-container {
+            width: 95% !important;
+        }
+    }
+}

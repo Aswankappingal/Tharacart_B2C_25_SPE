@@ -1,0 +1,6 @@
+
+@media(max-width:768px){
+    .app-wrapper{
+        padding-top: 0rem !important;
+    }
+}

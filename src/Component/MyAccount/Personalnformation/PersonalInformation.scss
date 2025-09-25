@@ -1,0 +1,203 @@
+.Personal-information-main-wrapper {
+    .personal-information {
+        width: 100%;
+       
+
+        .welcome-head {
+            display: flex;
+            gap: 10px;
+            justify-content: start;
+            align-items: center !important;
+
+            .arrow-icon {
+                background: var(--Color-2, #5D1CAA);
+                width: 35px;
+                height: 35px;
+                gap: 0px;
+                border-radius: 100px;
+                opacity: 0px;
+                font-size: 20px;
+                // padding-left: 13px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+
+        .information-heading {
+            font-family: Roboto;
+            font-size: 21px;
+            font-weight: 600;
+            line-height: 26.25px;
+            text-align: left;
+            color: #111111;
+        }
+
+        .personal-information-cards-wrapper {
+            padding-top: 2rem;
+
+            .infrmtn-left {
+                .address-card {
+                    width: 100%;
+                    border: 1px solid #F3F3F3;
+                    border-radius: 4px;
+
+                    .address-item {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 1rem;
+                        border-bottom: 1px solid #F3F3F3;
+
+                        p {
+                            font-family: Roboto;
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 15.6px;
+                            text-align: left;
+                            margin-bottom: 0 !important;
+                            color: #555650;
+                        }
+
+                        span {
+                            font-family: Roboto;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 17.5px;
+                            text-align: left;
+                            color: #111111;
+                        }
+
+                        button {
+                            background-color: transparent;
+                            border: none;
+                            color: #5D1CAA;
+                            font-family: Roboto;
+                            font-size: 12px;
+                            font-weight: 600;
+                            line-height: 14.06px;
+
+                        }
+
+                        .verifaid {
+                            font-family: Roboto;
+                            font-size: 12px;
+                            font-weight: 600;
+                            line-height: 15.6px;
+                            text-align: left;
+                            color: #111111;
+                            margin-right: 10px;
+                        }
+
+                        .verifyNow {
+                            font-family: Roboto;
+                            font-size: 12px;
+                            font-weight: 600;
+                            line-height: 15.6px;
+                            text-align: left;
+                            color: #5D1CAA;
+                        }
+                    }
+                }
+            }
+
+            .infrmtn-right {
+                .connect-social-account-card {
+                    width: 100%;
+                    border: 1px solid #F3F3F3;
+                    border-radius: 4px;
+
+
+                    h2 {
+                        font-family: Roboto;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 20px;
+                        text-align: left;
+                        color: #111111;
+                        padding: 1rem;
+                    }
+
+                    .create-account-item {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0 1rem;
+                        border-bottom: 1px solid #F3F3F3;
+                        height: 80px;
+
+
+                        .connect-google {
+                            background: #F2F2F2;
+                            padding: 7px 10px;
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            border-radius: 4px;
+
+                            span {
+                                font-family: Roboto;
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 20px;
+
+                            }
+                        }
+
+                        .connection {
+                            font-weight: 600;
+                            font-size: 14px;
+                            text-align: left;
+
+                          
+                            &.connected {
+                              color: green;
+                            }
+                          
+                            &.not-connected {
+                              color: red;
+                            }
+                          }
+                        .connection-apple{
+
+                            font-weight: 600;
+                            font-size: 14px;
+                            text-align: left;
+                            color: black;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width:576px) {
+        .connect-google {
+            span {
+                font-size: 10px !important;
+                line-height: 10px !important;
+            }
+        }
+
+        .connection {
+            font-family: Roboto;
+            font-size: 10px !important;
+            font-weight: 600;
+            text-align: left;
+        }
+        .welcome-head{
+            .Arrow-main-whole{
+                display: none;
+            }
+        }
+    }
+
+    @media(min-width:576px) and (max-width:1200px) {
+        .personal-information{
+            padding-top: 6rem !important;
+        }
+
+    }
+}

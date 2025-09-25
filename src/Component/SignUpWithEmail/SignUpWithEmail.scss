@@ -1,0 +1,222 @@
+.SignUpWithEmailMainWrapper {
+  .sign-up-with-email {
+    padding: 9rem 2rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .create-ac-form-data {
+      padding: 1.5rem;
+    }
+
+    .create-account-card {
+      width: 393px;
+      // height: 500px;
+      border: 1px solid #f3f3f3;
+      border-radius: 4px;
+
+      .create-ac-heading {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        padding-bottom: 2rem;
+
+        h2 {
+          font-family: Roboto;
+          font-size: 24px;
+          font-weight: 700;
+          margin-bottom: 0 !important;
+        }
+
+        .left-arrow {
+          font-size: 20px;
+          color: #111111;
+        }
+      }
+
+      .formData {
+        label {
+          font-family: Roboto;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 14.06px;
+          text-align: left;
+          color: #434343;
+          margin-bottom: 10px;
+        }
+
+        .nameField,
+        .emailField,
+        .phoneNumber,
+        .password {
+          width: 100%;
+          height: 40px;
+          border-radius: 10px;
+          border: 1px solid #b3b3b3;
+          margin-bottom: 10px;
+          padding-left: 10px;
+        }
+
+        .nameField:focus,
+        .emailField:focus {
+          outline: 1px solid #5d1caa;
+        }
+
+        .phoneNumber {
+          padding-left: 10px;
+          display: flex;
+          align-items: center;
+
+          .contry-code {
+            height: 40px;
+            width: 19%;
+            display: grid;
+            align-items: center;
+            border-right: 1px solid #b3b3b3;
+
+            select {
+              margin-bottom: 0 !important;
+              border: none;
+              width: 50px;
+            }
+
+            select:focus {
+              outline: none;
+            }
+          }
+
+          .numberFiled {
+            width: 260px !important;
+            height: 100% !important;
+            border: none;
+            padding-left: 10px;
+          }
+
+          .numberFiled:focus {
+            outline: none;
+          }
+        }
+
+        .password {
+          padding: 0 10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          input {
+            outline: none;
+            border: none;
+          }
+
+          .eye-icon {
+            cursor: pointer;
+            font-size: 20px;
+            margin-top: 0 !important;
+          }
+        }
+
+        input[type="checkbox"] {
+          accent-color: #6A1B9A;
+          height: 15px;
+          width: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid #999;
+          border-radius: 3px;
+          margin-right: 10px;
+          cursor: pointer;
+          position: relative;
+          outline: none;
+          background-color: white;
+        }
+
+
+
+
+        .sub-label {
+          padding-top: 10px;
+          font-family: Roboto;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 14px;
+          text-align: justified;
+          color: #787878;
+        }
+
+        button {
+          height: 40px;
+          border-radius: 10px;
+          color: white;
+          font-family: Roboto;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 22.4px;
+          width: 100%;
+          background-color: #5d1caa;
+          border: 1px solid #5d1caa;
+          transition: .3s;
+        }
+        .small-btn{
+          width: 60%;
+          display: block;
+          margin: auto;
+        }
+        p {
+          margin-top: 10px;
+          font-family: Roboto;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 19.2px;
+          text-align: center;
+          color: #787878;
+
+          a {
+            // text-decoration: none;
+            color: #787878;
+          }
+        }
+      }
+
+      .bottomData {
+        border-top: 1px solid #f3f3f3;
+        height: 79px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 2rem;
+        align-items: center;
+
+        p {
+          font-family: Roboto;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 14.06px;
+          text-align: left;
+          color: #111111;
+          margin-bottom: 0 !important;
+        }
+
+        a {
+          text-decoration: none;
+          font-family: Roboto;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 14.4px;
+          letter-spacing: 0.02em;
+          text-align: left;
+          color: #5d1caa;
+        }
+      }
+    }
+  }
+
+  @media(max-width:800px) {
+    .sign-up-with-email {
+      padding: 1rem !important;
+    }
+
+    .create-account-card {
+      width: 100% !important;
+    }
+  }
+}

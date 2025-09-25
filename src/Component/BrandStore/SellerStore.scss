@@ -1,0 +1,903 @@
+.brandStoreWrapper {
+    .brand-store {
+        padding-top: 7rem;
+a{
+    text-decoration: none !important;
+    color: black;
+}
+        .leave-seller-modal {
+            z-index: 99999999999;
+            background-color: rgba(0, 0, 0, 0.608);
+            padding-top: 4rem;
+
+            .modal-header {
+                h1 {
+                    font-family: Roboto;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 23.44px;
+                    text-align: left;
+                    color: #111111;
+                }
+            }
+
+            .star {
+                color: #5D1CAA;
+                font-size: 42px;
+                margin-right: 5px;
+            }
+
+            .white {
+                color: #c0c0c0;
+            }
+
+            p {
+                padding-top: 1rem;
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 18.75px;
+                text-align: left;
+
+            }
+
+            label {
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14.06px;
+                text-align: left;
+                color: #434343;
+            }
+
+            textarea {
+                width: 100%;
+                height: 100px;
+                border-radius: 8px;
+                border: 1px solid #B3B3B3;
+                margin-top: 5px;
+                padding-left: 10px;
+            }
+
+            textarea:focus {
+                outline: 1px solid #5D1CAA;
+            }
+
+            .modal-footer {
+                display: flex;
+                justify-content: start;
+
+                button {
+                    padding: 12px 20px;
+                    background-color: #5D1CAA;
+                    border: #5D1CAA;
+                    color: white;
+                    font-family: Roboto;
+                    font-size: 15px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    text-align: left;
+                    border-radius: 10px;
+
+                }
+            }
+        }
+
+        #ReportProductModal {
+            z-index: 99999999999;
+            background-color: rgba(0, 0, 0, 0.608);
+            padding-top: 4rem;
+
+            .what-is-issue-heading {
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 16.41px;
+                text-align: left;
+            }
+
+            .issue-list {
+                padding-top: .6rem;
+            }
+
+            .radio-group {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-bottom: 10px;
+            }
+
+            .radio-input {
+                appearance: none;
+                width: 24px;
+                height: 24px;
+                border: 2px solid #ccc;
+                border-radius: 50%;
+                position: relative;
+            }
+
+            .radio-input:checked::before {
+                content: '';
+                width: 14px;
+                height: 14px;
+                background-color: #5D1CAA;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .radio-input:checked {
+                border-color: #5D1CAA;
+            }
+
+
+            label {
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14.06px;
+                text-align: left;
+
+            }
+
+            .comment-section {
+                padding-top: 1rem;
+
+                p {
+                    font-family: Roboto;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 14.06px;
+                    text-align: left;
+                    color: #434343;
+                }
+
+                textarea {
+                    width: 100%;
+                    height: 100px;
+                    border: 1px solid #8C8C8C;
+                    border-radius: 8px;
+                    padding-left: 10px;
+                }
+
+                textarea:focus {
+                    outline: 1px solid #5D1CAA;
+                }
+            }
+
+            .modal-footer {
+                display: flex;
+                justify-content: start;
+
+                button {
+                    padding: 12px 20px;
+                    background-color: #5D1CAA;
+                    border: #5D1CAA;
+                    color: white;
+                    font-family: Roboto;
+                    font-size: 15px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    text-align: left;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .brand-store-hero {
+            height: 320px;
+            width: 100%;
+            background-size: cover;
+        }
+
+        .about-thara-section {
+            display: flex;
+            background: #F3F3F3;
+            height: 126px;
+            justify-content: space-between;
+            padding: 0 2rem;
+            align-items: center;
+
+            .about-thara-left {
+                display: flex;
+                width: 50%;
+
+                .about-thara-left-first-section {
+                    width: 250px;
+
+                    h3 {
+                        font-family: Roboto;
+                        font-size: 21px;
+                        font-weight: 600;
+                        line-height: 26.25px;
+                        color: #111111;
+                    }
+
+                    p {
+                        font-family: Roboto;
+                        font-size: 13px;
+                        font-weight: 400;
+                        line-height: 18.2px;
+                        text-align: left;
+                        color: #1E3354;
+                    }
+
+                    .thara-best-seller {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: linear-gradient(to right, #8B39E2 10%, #1F0143);
+                        width: 128px;
+                        height: 24px;
+                        color: white;
+                        font-family: Roboto;
+                        font-size: 11px;
+                        font-weight: 500;
+                        line-height: 13.75px;
+                        border-radius: 2px;
+                    }
+
+                }
+
+                .about-thara-left-second-section {
+                    width: 250px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 12px;
+
+                    .rating {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        justify-content: center;
+
+                        p {
+                            margin-bottom: 0 !important;
+                            font-size: 20px;
+                            font-weight: 700;
+                            line-height: 23.44px;
+                            text-align: center;
+                        }
+
+                        .star {
+                            font-family: Roboto;
+                            font-size: 24px;
+                            color: #5D1CAA;
+                            margin-right: 8px;
+                        }
+                    }
+
+                    .see-all-review {
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 16.41px;
+                        color: #5D1CAA;
+                    }
+                }
+
+
+            }
+
+            .about-thara-right {
+                display: flex;
+                gap: 1rem;
+
+                button {
+                    padding: 10px 15px;
+                    background-color: white;
+                    border: 1px solid #5D1CAA;
+                    border-radius: 10px;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 22.4px;
+                    text-align: left;
+                    color: #5D1CAA;
+
+                }
+            }
+        }
+
+        // ====================================top-selling-product=============================
+        .top-selling-product-section {
+            padding: 2rem;
+
+            .top-selling-heading {
+                font-family: Roboto;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 22.5px;
+                text-align: left;
+                color: #111111;
+                margin-bottom: 20px;
+            }
+
+            .product-card-main {
+                .trending-product-card {
+                    width: 266px;
+                    border: 1px solid #F2F2F2;
+                    border-radius: 4px;
+                    margin: auto;
+                    position: relative;
+                    padding: 10px;
+
+                    .heart-icon {
+                        position: absolute;
+                        right: 10px;
+                        top: 10px;
+                    }
+
+                    .top-sell-label {
+                        position: absolute;
+                        left: 10px;
+                        top: 10px;
+                        background: #B271F333;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: fit-content;
+                        padding: 6px 9px;
+                        font-family: Roboto;
+                        font-size: 11px;
+                        font-weight: 500;
+                        line-height: 13.75px;
+                        color: #5D1CAA;
+                    }
+
+                    .heart-icon {
+                        font-size: 24px;
+                    }
+
+                    .prod-image {
+                        height: 270px;
+                        width: 90%;
+                        margin: auto;
+                        overflow: hidden;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .prod-disc {
+                        font-family: Roboto;
+                        font-size: 13px;
+                        font-weight: 400;
+                        line-height: 18.2px;
+                        color: #1E3354;
+                        padding-top: 1rem;
+                    }
+
+                    .price-details {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+
+                        .offer-price {
+                            font-family: Roboto;
+                            font-size: 18px;
+                            font-weight: 600;
+                            line-height: 22.5px;
+                            color: #111111;
+                            margin-bottom: 0 !important;
+
+                        }
+
+                        .og-price {
+                            font-family: Roboto;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 16.8px;
+                            letter-spacing: 0.02em;
+                            color: #8C8C8C;
+                            margin-bottom: 0 !important;
+                        }
+
+                        .offer-ratio {
+                            font-family: Roboto;
+                            font-size: 14px;
+                            font-weight: 600;
+                            line-height: 16.8px;
+                            letter-spacing: 0.02em;
+                            text-align: left;
+                            margin-bottom: 0 !important;
+                            color: #038A10;
+                        }
+                    }
+
+                    .rating-square {
+                        margin-top: 5px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 48px;
+                        height: 25px;
+                        border: 1px solid #DADADA;
+                        border-radius: 5px;
+                        gap: 4px;
+
+                        .star {
+                            font-size: 16px;
+                        }
+
+                        span {
+                            font-family: Roboto;
+                            font-size: 12px;
+                            font-weight: 700;
+                            line-height: 14.4px;
+                            letter-spacing: 0.02em;
+                            text-align: left;
+
+                        }
+                    }
+
+                    .Sponsored {
+                        font-family: Roboto;
+                        font-size: 11px;
+                        font-weight: 500;
+                        line-height: 13.75px;
+                        text-align: left;
+                        color: #8C8C8C;
+                        margin-top: 9px;
+                        margin-bottom: 0 !important;
+                    }
+                }
+            }
+        }
+
+        // =============================brands-we-deal========================
+        .brands-we-deal {
+            padding: 2rem;
+
+            .brand-deal-head-section {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .brand-deal-heading {
+                    font-family: Roboto;
+                    font-size: 21px;
+                    font-weight: 600;
+                    line-height: 26.25px;
+                    text-align: left;
+                    color: #111111;
+                }
+
+                .seemore-container {
+                    display: flex;
+                    align-items: center;
+                    gap: 7px;
+                    cursor: pointer;
+
+                    span {
+                        font-family: Roboto;
+                        font-size: 13px;
+                        font-weight: 600;
+                        line-height: 16.25px;
+                        color: #111111;
+                    }
+
+                    .down-arrow {
+                        transition: .2s;
+                    }
+
+                    .opened {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            .brands-wrapper {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 1.7rem;
+                padding-top: 1.5rem;
+
+                .brand-card {
+                    width: 176px;
+
+                    .brand-image {
+                        width: 176px;
+                        height: 176px;
+                        border-radius: 50%;
+                        background: #F3F3F3;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            width: 70%;
+                        }
+                    }
+
+                    p {
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 17.5px;
+                        text-align: left;
+                        color: #111111;
+                        text-align: center;
+                        padding-top: 6px;
+                    }
+                }
+            }
+        }
+
+        // ===========================trending-product==========================
+        // ===============================trending-products============================
+        .trending-product-card-wrapper {
+            padding: .5em 10px;
+            overflow: hidden;
+            padding-bottom: 4rem;
+            position: relative;
+
+            .carousel-next-btn-wrapp {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                right: 0;
+                z-index: 66;
+                top: 0;
+                height: 100%;
+                width: 200px;
+                background: linear-gradient(to right, (rgba(0, 0, 0, 0), rgb(255, 255, 255)));
+                justify-content: right;
+                padding-right: 1rem;
+
+                img {
+                    cursor: pointer;
+                    z-index: 666666;
+                }
+            }
+        }
+
+        .trending-products {
+            padding-top: 1rem;
+            padding-left: 10px;
+
+            h3 {
+                font-family: Roboto;
+                font-size: 21px;
+                font-weight: 600;
+                line-height: 26.25px;
+                text-align: left;
+            }
+
+            .link {
+                text-decoration: none;
+            }
+
+            .trending-card {
+                padding: 0 10px;
+                width: 168px;
+                border: 1px solid #F3F3F3;
+
+                p {
+                    font-family: Roboto;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 16.8px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+                    color: #1E3354;
+                }
+
+                .price {
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 19.2px;
+                    letter-spacing: 0.02em;
+                    color: #111111;
+                    margin-right: 10px;
+                }
+
+                .crossed-price {
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19.2px;
+                    letter-spacing: 0.02em;
+                    color: #8C8C8C;
+                }
+            }
+        }
+
+        @media(max-width:576px) {
+            .carousel-next-btn-wrapp {
+                width: fit-content !important;
+            }
+        }
+
+        // ===================================rating-and-review-section-main-section==============================
+        .rating-and-review-section-main-section {
+            padding: 2rem;
+
+            .rating-and-review-section-main {
+                border: 1px solid #F3F3F3;
+                border-radius: 4px;
+
+                .rating-review-left {
+                    padding: 1rem;
+                    position: sticky;
+                    top: 125px;
+                    max-height: 500px;
+                    border-right: 1px solid #F3F3F3;
+
+                    p {
+                        font-family: Roboto;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 22.5px;
+                    }
+
+                    .rating-count-left {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+
+                        span {
+                            font-family: Roboto;
+                            font-size: 20px;
+                            font-weight: 700;
+                            line-height: 23.44px;
+                            text-align: center;
+                            color: #111111;
+                        }
+
+                        .star {
+                            font-size: 24px;
+                            color: #5D1CAA;
+                        }
+                    }
+
+                    .rating-count-right {
+                        .ratingprogress {
+                            display: flex;
+                            gap: 6px;
+                            align-items: center;
+                            justify-content: center;
+                            margin-bottom: 5px;
+
+                            span {
+                                font-family: Roboto;
+                                font-size: 12px;
+                                font-weight: 700;
+                                line-height: 14.06px;
+                                letter-spacing: 0.02em;
+
+                            }
+
+                            .star {
+                                color: #5D1CAA;
+                            }
+
+                            .progress-baar {
+                                width: 111px;
+                                height: 9px;
+                                background-color: #ECECEC;
+                                border-radius: 12px;
+
+                                .inner-progress {
+                                    height: 9px;
+                                    border-radius: 12px;
+                                    background-color: #5D1CAA;
+                                }
+                            }
+                        }
+                    }
+
+                    .rate-seller-btn {
+                        width: 100%;
+                        margin-top: 1rem;
+                        height: 48px;
+                        background-color: white;
+                        border: 1px solid #5D1CAA;
+                        color: #5D1CAA;
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 22.4px;
+                        border-radius: 10px;
+                        transition: .2s;
+                    }
+
+                    .rate-seller-btn:hover {
+                        background-color: #5D1CAA;
+                        color: white;
+                    }
+                }
+
+                .rating-review-right {
+                    height: 860px;
+
+                    .review-comments-container {
+                        padding: 1rem;
+                        border-bottom: 1px solid #F3F3F3;
+
+                        .star {
+                            color: #5D1CAA;
+                            font-size: 16px;
+                            margin-right: 4px;
+                        }
+
+                        .white {
+                            color: #cacaca;
+                        }
+
+                        h5 {
+                            padding-top: 5px;
+                            font-family: Roboto;
+                            font-size: 12px;
+                            font-weight: 700;
+                            line-height: 14.06px;
+                            margin: 0 !important;
+                        }
+
+                        .user {
+                            font-family: Roboto;
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 14.06px;
+                            letter-spacing: 0.02em;
+                            color: #8C8C8C;
+                        }
+
+                        p {
+                            font-family: Roboto;
+                            font-size: 13px;
+                            font-weight: 400;
+                            line-height: 18.2px;
+                            text-align: left;
+
+                        }
+
+                    }
+
+                    .pagination {
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        list-style-type: none;
+                        padding: 0;
+                    }
+
+                    .pagination li {
+                        display: inline;
+                        margin: 0 4px;
+                    }
+
+                    .pagination li a {
+                        padding: 8px 16px;
+                        border: 0.5px solid #00000033;
+                        background: #E6E6E6;
+                        font-family: Roboto;
+                        font-size: 13px;
+                        font-weight: 500;
+                        line-height: 15.23px;
+                        color: #000000;
+                        cursor: pointer;
+                        text-decoration: none;
+                        border-radius: 4px;
+                    }
+
+                    .pagination li.active a {
+                        background-color: #5D1CAA;
+                        color: white;
+                        border-color: #5D1CAA;
+                    }
+
+                    .pagination li a:hover {
+                        background-color: #5D1CAA;
+                        color: white;
+                    }
+
+                    .pagination .break-me {
+                        display: inline-block;
+                        padding: 8px 16px;
+                        border: 1px solid transparent;
+                    }
+
+                    .pagination .break-me a {
+                        color: #333;
+                        cursor: default;
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    @media(max-width:576px) {
+        .brand-store {
+            padding-top: 0;
+        }
+
+        .about-thara-section {
+            height: auto !important;
+            padding: 1rem 0 !important;
+            flex-direction: column !important;
+
+            .about-thara-left {
+                width: 100% !important;
+                align-items: center !important;
+                flex-direction: column !important;
+
+                .about-thara-left-first-section {
+                    width: 100% !important;
+                    display: flex !important;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+
+        .rating-review-left {
+            position: static !important;
+        }
+
+        .brand-card {
+            width: 80px !important;
+
+            .brand-image {
+                width: 80px !important;
+                height: 80px !important;
+            }
+        }
+    }
+
+    @media(min-width:576px) and (max-width:768px) {
+        .brand-store {
+            padding-top: 0;
+        }
+
+        .about-thara-section {
+            height: auto !important;
+            padding: 1rem !important;
+
+            .about-thara-left {
+                align-items: center !important;
+                flex-direction: column !important;
+
+                .about-thara-left-first-section {
+                    width: 100% !important;
+                    display: flex !important;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+
+        .rating-review-left {
+            position: static !important;
+        }
+
+        .brand-card {
+            width: 100px !important;
+
+            .brand-image {
+                width: 100px !important;
+                height: 100px !important;
+            }
+        }
+    }
+     .fa-star{
+        color: red !important;
+     }
+
+     .modal-dialog{
+margin-top: 10rem;     }
+}

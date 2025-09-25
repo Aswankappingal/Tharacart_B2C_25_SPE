@@ -1,0 +1,256 @@
+.walletSectionMainWrapper {
+    .walletSection {
+        h1 {
+            font-family: Roboto;
+            font-size: 21px;
+            font-weight: 600;
+            line-height: 26.25px;
+            color: #111111;
+        }
+
+        .welcome-head {
+            display: flex;
+            gap: 10px;
+            justify-content: start;
+            align-items: center !important;
+
+            .arrow-icon {
+                background: var(--Color-2, #6C3AAA);
+                width: 35px;
+                height: 35px;
+                gap: 0px;
+                border-radius: 100px;
+                opacity: 0px;
+                font-size: 20px;
+                // padding-left: 13px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+
+        .heyTharaCard {
+            width: 345px;
+            height: 120px;
+            border-radius: 4px;
+            margin-top: 2rem;
+            background: linear-gradient(356.01deg, #6C3AAA -169.76%, #210545 100.75%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: space-between;
+            padding: .8rem;
+
+            img {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            h5 {
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 16.41px;
+                color: #ffff;
+            }
+
+            h3 {
+                font-family: Roboto;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 28.8px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                color: #ffff;
+                margin-bottom: 0 !important;
+
+            }
+
+            P {
+                margin-bottom: 0 !important;
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14.06px;
+                color: white;
+            }
+
+        }
+
+        .transaction-history-card {
+            border: 1px solid #F3F3F3;
+            width: 100%;
+            max-height: 2400px;
+            border-radius: 4px;
+            margin-top: 2rem;
+
+            .transaction-header {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #F3F3F3;
+                padding: 1rem;
+                align-items: center;
+
+                h3 {
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 18.75px;
+                    color: #111111;
+                    margin: 0 !important;
+                }
+
+                select {
+                    border: 0.5px solid #00000033;
+                    border-radius: 5px;
+                    width: 107px;
+                    height: 32px;
+                    font-family: Roboto;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 14.06px;
+                    color: #111111;
+                    cursor: pointer;
+                }
+
+                select:focus {
+                    outline: none;
+                }
+            }
+
+            .table-only {
+                overflow-x: scroll;
+                padding-bottom: 1rem;
+            }
+
+            .table-only::-webkit-scrollbar {
+                display: none;
+            }
+
+            .table-section {
+                table {
+                    width: 1200px;
+
+                    td {
+                        padding: .4rem;
+                        border: 1px solid #F3F3F3;
+
+                    }
+
+                    .arrow {
+                        background: #FAFAFA;
+                        border-radius: 50%;
+                        padding: 10px;
+                        font-size: 43px;
+                        transform: rotate(45deg);
+                        color: #44A320;
+                    }
+
+                    .outArrow {
+                        color: #D02020;
+                    }
+
+                    span {
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 16px;
+                        margin-left: 10px;
+                    }
+
+                    p {
+                        margin-bottom: 0 !important;
+                        text-align: center;
+                        font-family: Roboto;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 16px;
+                        color: #474747;
+
+                    }
+
+                    .price {
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 16px;
+                        text-align: left;
+
+                    }
+
+                }
+
+                .pagination {
+                    width: 90%;
+                    margin: auto;
+                    height: 70px;
+                    padding-top: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    list-style: none;
+                }
+
+                .pagination li {
+                    margin: 0 5px;
+                    cursor: pointer;
+                }
+
+                .pagination li a {
+                    padding: 8px 12px;
+                    border: 0.5px solid #00000033;
+                    color: #1E1E1E;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    font-family: Roboto;
+                    font-size: 13px;
+                    font-weight: 500;
+                    line-height: 15.23px;
+
+                }
+
+                .pagination li.active a {
+                    background-color: #6C3AAA;
+                    color: white;
+                    border: 1px solid #6C3AAA;
+                }
+
+                .pagination li.disabled a {
+                    color: #ddd;
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+
+    @media(max-width:768px) {
+
+        table {
+            width: 700px !important;
+        }
+
+        .pagination li a {
+            padding: 5px 9px !important;
+            font-size: 10px !important;
+        }
+        .walletSection{
+            .welcome-head{
+                .Main-heade-link{
+                    display: none;
+                }
+            }
+
+        }
+       
+    }
+
+    @media(min-width:576px) and (max-width:1200px) {
+
+        padding-top: 6rem !important;
+
+
+    }
+}

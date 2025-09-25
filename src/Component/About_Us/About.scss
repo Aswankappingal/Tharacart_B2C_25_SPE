@@ -1,0 +1,98 @@
+.Aboutuswrapper {
+    width: 100%;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .about-container {
+        flex: 1;
+        margin-top: 7rem;
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+
+        .about-content {
+            max-width: 1100px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            padding: 2.5rem;
+
+            .about-title {
+                font-family: Roboto;
+                font-weight: 700;
+                font-size: 38px;
+                line-height: 47.5px;
+                letter-spacing: 0px;
+
+            }
+
+            .about-description {
+                margin-bottom: 1.5rem;
+
+                p {
+                    font-family: Roboto;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+                    letter-spacing: 0px;
+
+                }
+            }
+
+            .company-info {
+                .address-block {
+                    margin-bottom: 1.5rem;
+
+                    .company-name {
+                        font-family: Roboto;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 15px;
+                        letter-spacing: 0px;
+
+                    }
+
+                    .address {
+                        font-family: Roboto;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 15px;
+                        letter-spacing: 0px;
+
+                    }
+                }
+
+                .email-info {
+                    p {
+                        a {
+                            font-family: Roboto;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            letter-spacing: 0px;
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Responsive adjustments
+    @media (max-width: 768px) {
+        .about-container {
+            padding: 1rem;
+
+            .about-content {
+                padding: 1.5rem;
+            }
+        }
+    }
+}

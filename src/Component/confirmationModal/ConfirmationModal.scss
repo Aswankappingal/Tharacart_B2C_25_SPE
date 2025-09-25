@@ -1,0 +1,70 @@
+/* ConfirmationModal.scss */
+
+.confirmation-alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.604); /* Overlay background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999999999999; /* Ensure it appears above other elements */
+}
+
+.alert-content {
+    background-color: #fff;
+    padding: 20px 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.alert-content p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.confirm-btn,
+.cancel-btn {
+    padding: 10px 60px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-btn {
+    background-color: #ff4d4f;
+    color: #fff;
+}
+
+.confirm-btn:hover {
+    background-color: #d9363e;
+}
+
+.cancel-btn {
+    background-color: #ccc;
+    color: #333;
+}
+
+.cancel-btn:hover {
+    background-color: #b0b0b0;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+}
+}

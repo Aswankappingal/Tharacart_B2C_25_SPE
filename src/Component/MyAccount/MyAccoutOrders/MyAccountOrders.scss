@@ -1,0 +1,473 @@
+.myaccout-wrapper {
+  
+   
+    .myaccount-main-body {
+      
+        .Align {
+            display: flex;
+        }
+
+        .myaccount-homepage {
+            max-height: 5000vh !important;
+            width: 100%;
+            padding: 0px 1rem 3rem;
+           
+
+
+
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .goto-order-btn {
+                text-align: center;
+                background-color: #F3F3F3;
+                height: 40px;
+                font-weight: 600;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: roboto;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+
+
+            .homepage-content {
+                padding-top: 1rem;
+
+                .welcome-head {
+                    display: flex;
+                    gap: 10px;
+                    justify-content: start;
+                    align-items: center !important;
+
+                    .arrow-icon {
+                        background: var(--Color-2, #48086d);
+                        width: 35px;
+                        height: 35px;
+                        gap: 0px;
+                        border-radius: 100px;
+                        opacity: 0px;
+                        font-size: 20px;
+                        // padding-left: 13px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+                }
+
+                h1 {
+                    font-family: Roboto;
+                    font-size: 21px;
+                    font-weight: 600;
+                    line-height: 26.25px;
+                    text-align: left;
+                    color: #111111;
+                }
+            }
+
+            .drop-down-containers {
+                display: flex;
+                gap: 2rem;
+                justify-content: space-between;
+                padding-top: 4rem !important;
+
+                .left-side {
+                    display: flex;
+                    gap: 1rem;
+
+                    .drop-down {
+                        padding: 0px 1rem;
+                        border: 1px solid #111111;
+                        height: 48px;
+                        display: grid;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 5px;
+
+
+                        select {
+                            width: 100%;
+                            height: 100%;
+                            border: none;
+                            background-color: transparent;
+                            font-family: Roboto;
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 14.06px;
+                            text-align: left;
+                            color: #111111;
+                        }
+
+                        :focus {
+                            outline: none;
+                        }
+
+                    }
+                }
+
+                .right-side {
+                    display: flex;
+
+                    form {
+                        display: flex;
+                        gap: 1rem;
+                        align-items: center;
+                        justify-content: center;
+
+                        .search-bar {
+                            display: flex;
+                            align-items: center;
+                            border-radius: 10px;
+                            border: 1px solid #0000001A !important;
+                            justify-content: space-between;
+                            width: 345px;
+                            height: Fixed (48px)px;
+                            padding: 0px 10px;
+                            gap: 5px;
+                            border: 1px;
+                        }
+
+                        input {
+                            width: 100%;
+                            height: 100%;
+                            background-color: transparent;
+                            padding: 14px 16px 14px 16px;
+                            gap: 10px;
+                            border: none !important;
+                            border-radius: 10px;
+                            display: flex;
+                            align-items: center;
+
+
+                            opacity: 0px;
+                            border: 1px solid #0000001A;
+                        }
+
+                        :focus {
+                            outline: none;
+                        }
+
+                        ::placeholder {
+                            color: #828282;
+                            font-family: Roboto;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 16.41px;
+                            text-align: left;
+
+                        }
+
+                        button {
+                            width: 127px;
+                            height: 48px;
+                            padding: 10px 20px 10px 20px;
+                            gap: 10px;
+                            background-color: white;
+                            border-radius: 10px;
+                            border: 1px solid #02400C;
+                            font-family: Roboto;
+                            font-size: 14px;
+                            font-weight: 600;
+                            line-height: 22.4px;
+                            color: #02400C;
+
+                            opacity: 0px;
+
+                        }
+                    }
+                }
+
+            }
+
+            .oredr-tracking-container {
+                width: 100% !important;
+                height: 39px;
+                // border: 1px solid rgb(163, 168, 97);
+                // background-color: #ff1616;
+                background-color: #F3F3F3;
+                margin-top: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .tracking-titles {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0px 1rem;
+
+                    .order-id,
+                    .oredr-placed,
+                    .total-amount {
+                        h4 {
+                            margin-bottom: 0px !important;
+                            padding-bottom: 0px !important;
+                            font-family: Roboto;
+                            font-size: 12px;
+                            font-weight: 500;
+                            line-height: 15px;
+                            text-align: left;
+                            color: #111111;
+
+                            span {
+                                font-family: Roboto;
+                                font-size: 12px;
+                                font-weight: 500;
+                                line-height: 15px;
+                                margin-right: 10px;
+                                text-align: left;
+                                color: #555650;
+                            }
+
+                        }
+                    }
+                }
+
+
+            }
+
+            .tracking-container-row {
+                border: 0.3px solid #00000020;
+                border-top: 0;
+                // width: 100%;
+
+            }
+
+            .track-container-left-side {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0px 1rem;
+                height: 150px;
+                gap: 1rem;
+
+
+                .oredr-image {
+                    width: 126px !important;
+                    height: 103px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+
+                .order-details {
+                    width: 100%;
+
+                    h5 {
+                        font-family: Roboto;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 22.5px;
+                        text-align: left;
+                        padding-bottom: 10px;
+                        margin-bottom: 0px !important;
+
+                    }
+
+                    p {
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 17.5px;
+                        padding-bottom: 1px;
+                        margin-bottom: 0px !important;
+                        text-align: left;
+                        font-variation-settings: 'wdth' 100, 'opsz' 14;
+                        color: #000000;
+                    }
+
+
+                }
+            }
+
+            .track-right {
+                // height: 100%;
+                // background-color: red;
+                display: flex;
+                align-items: center;
+            }
+
+            .track-container-right-side {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+                height: 150px;
+                justify-content: center;
+
+                .view-account-btn {
+                    button {
+                        width: 250px;
+                        height: 36px;
+                        gap: 10px;
+                        border-radius: 10px;
+                        border: none;
+                        opacity: 0px;
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 22.4px;
+                        color: #F3F3F3;
+
+                        background: var(--ff, #48086d);
+
+                        img {
+                            margin-right: 10px;
+                        }
+
+                    }
+                }
+
+                .get-help-btn {
+                    button {
+                        width: 250px;
+                        height: 36px;
+                        gap: 10px;
+                        border-radius: 10px;
+                        border: none;
+                        opacity: 0px;
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 22.4px;
+                        border: 1px solid #02400C;
+                        color: #02400C;
+                        background: #ffffff;
+
+                    }
+                }
+
+            }
+
+        }
+
+        .order-btn {
+            width: 100% !important;
+            height: 39px;
+            // border: 1px solid rgb(163, 168, 97);
+            // background-color: #ff1616;
+            background-color: #F3F3F3;
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .vieworder {
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 16px;
+                text-align: left;
+                color: #02400C;
+                text-decoration: none;
+            }
+        }
+    }
+
+    @media (max-width:993px) {
+        .myaccount-main-body {
+
+            // padding-top: 4rem;
+            .drop-down-containers {
+                padding-top: 20px !important;
+                flex-direction: column;
+            }
+        }
+
+        .myaccount-homepage {
+            padding-bottom: 6rem !important;
+        }
+
+        .left-side {
+            width: 100%;
+
+            .drop-down {
+                padding: 10px !important;
+            }
+        }
+
+        .right-side {
+
+            // background-color: #3c3535;
+            form {
+                gap: 10px !important;
+            }
+
+            input {
+                padding: 14px 1px 14px 0px !important;
+            }
+
+            button {
+                padding: 0px !important;
+                width: 85px !important;
+            }
+
+            .search-bar {
+                width: 90% !important;
+
+            }
+        }
+
+
+        .tracking-titles {
+            flex-direction: column !important;
+
+        }
+
+
+        .track-container-left-side {
+            padding: 0px 5px !important;
+
+
+            .order-image {
+                width: 256px !important;
+                height: 100px !important;
+            }
+
+            .order-details {
+                h5 {
+                    font-size: 13px !important;
+                }
+
+                p {
+                    font-size: 11px !important;
+                }
+            }
+
+
+        }
+
+        .oredr-tracking-container {
+            height: auto !important;
+            padding: 10px !important;
+        }
+    }
+    @media (max-width:593px) {
+        .homepage-content{
+            .welcome-head{
+                .linkkkkkkk{
+                    display: none;
+                }
+            }
+        }
+
+    }
+    @media(min-width:576px) and (max-width:1200px) {
+
+        padding-top: 5rem !important;
+
+
+    }
+}

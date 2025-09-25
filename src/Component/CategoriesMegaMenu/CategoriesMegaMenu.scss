@@ -1,0 +1,101 @@
+.MegaMenuMainWrapper {
+    .overLay {
+        width: 100%;
+        position: fixed;
+        top: 118px;
+        background-color: rgba(0, 0, 0, 0.658);
+        z-index: 9999999999;
+        height: 100vh;
+    }
+
+    
+
+    .activeCategory,
+    .activeSubCategory {
+        width: 90%;
+        height: 30px;
+        background-color: rgb(219, 219, 219);
+
+        span {
+            color: #5D1CAA !important;
+
+        }
+    }
+
+    tr {
+        border-left: 1px solid black;
+    }
+
+    .mega-menu {
+        height: 45vh;
+        background-color: white;
+        z-index: 9999999999;
+        display: flex;
+        align-items: start;
+        // overflow-y: scroll;
+
+
+        .main-categories-list,
+        .sub-categories-list,
+        .super-sub-categories-list {
+            height: 50vh;
+            overflow-y: scroll !important;
+        }
+
+        .main-categories-list::-webkit-scrollbar,
+        .sub-categories-list::-webkit-scrollbar,
+        .super-sub-categories-list::-webkit-scrollbar,
+        .chiled-items-list::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .main-categories-list::-webkit-scrollbar-track,
+        .sub-categories-list::-webkit-scrollbar-track,
+        .super-sub-categories-list::-webkit-scrollbar-track,
+        .chiled-items-list::-webkit-scrollbar-track {
+            background: rgba(155, 155, 155, 0.1);
+        }
+
+        .main-categories-list::-webkit-scrollbar-thumb {
+            background-color: #C3C3C3;
+            border-radius: 20px;
+            border: 2px solid rgba(0, 0, 0, 0);
+        }
+
+        .items-wrapp {
+            width: 200px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding-left: 2rem;
+
+        }
+
+        .items {
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            text-align: left;
+            color: #111111;
+            margin-bottom: 0 !important;
+            padding-left: 10px;
+            cursor: pointer;
+        }
+
+
+
+
+
+        .item-image {
+            width: 20%;
+            display: flex;
+            justify-content: end;
+
+            img {
+                width: 200px;
+            }
+        }
+
+    }
+}

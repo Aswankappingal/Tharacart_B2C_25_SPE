@@ -1,0 +1,170 @@
+.FooterMainWrapper {
+    margin-top: 3rem;
+
+    a {
+        text-decoration: none;
+    }
+
+    .top-footer {
+        background-color: #231832;
+        padding: 40px 30px;
+
+        .footer-left{
+
+            #tharacart-footerlogo{
+                display: none;
+            }
+
+        }
+        .footer-address-naseem{
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.5px;
+            text-align: left;
+            color: #ffff;
+            margin-top: 20px;
+
+        }
+
+        .footer-address {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.5px;
+            text-align: left;
+            color: #ffff;
+            margin-top: 20px;
+        }
+
+        .download-text {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.5px;
+            text-align: left;
+            color: #9A8FAA;
+        }
+
+        h3 {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.5px;
+            color: #9A8FAA;
+            margin-bottom: 2rem;
+        }
+
+        .footer-items {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        span {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.5px;
+            color: white;
+            margin-bottom: 10px;
+        }
+    }
+
+    .bottom-footer {
+        height: 50px;
+        background-color: #1B0F2A;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+
+        a {
+            color: white !important;
+            text-decoration: none;
+        }
+
+        span {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.5px;
+            text-align: left;
+            color: #ffff;
+        }
+
+        img {
+            width: 400px;
+        }
+    }
+
+    @media(max-width:1000px) {
+        .top-footer {
+            .footer-left {
+                img {
+                    margin-bottom: 1rem !important;
+                }
+
+                text-align: center;
+
+                p {
+                    width: fit-content;
+                    margin: auto;
+                    margin-bottom: 1rem !important;
+                }
+            }
+
+            h3 {
+                margin-bottom: 1rem;
+                margin-top: 2rem !important;
+                text-align: center !important;
+                font-size: 20px !important;
+            }
+
+            .footer-items {
+                align-items: center !important;
+            }
+        }
+
+        .bottom-footer {
+            height: 80px;
+            flex-direction: column !important;
+            justify-content: center;
+            gap: 10px;
+
+            span {
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17.5px;
+                text-align: left;
+                color: #ffff;
+            }
+
+            img {
+                width: 90%;
+            }
+        }
+    }
+
+    @media(max-width:526px) {
+
+        .footer-left{
+           #tharacart-navlogo{
+            display: none !important;
+           }
+           #tharacart-footerlogo{
+            display: inline !important;
+            // border: 1px solid red;
+           }
+
+        }
+        padding-bottom: 4rem;
+
+    }
+}

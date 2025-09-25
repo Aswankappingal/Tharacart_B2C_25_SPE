@@ -1,0 +1,175 @@
+.Rating-review-main-wrapper {
+    .rating-review {
+        width: 100%;
+
+        .welcome-head {
+            display: flex;
+            gap: 10px;
+            justify-content: start;
+            align-items: center !important;
+            margin-top: 20px !important;
+
+            .arrow-icon {
+                background: var(--Color-2, #6a0dad);
+                width: 33px;
+                height: 33px;
+                gap: 0px;
+                border-radius: 100px;
+                opacity: 0px;
+                font-size: 20px;
+                // padding-left: 13px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+
+        .information-heading {
+            font-family: Roboto;
+            font-size: 21px;
+            font-weight: 600;
+            padding-top: 20px;
+            line-height: 26.25px;
+            text-align: left;
+            color: #111111;
+        }
+
+        .main-border {
+            .rating-details {
+                padding: 0px 20px 5px 20px;
+
+                .bottom-border {
+                    border-bottom: 1px solid #F3F3F3;
+                    padding-top: 8px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+
+            }
+
+            margin-top: 2rem;
+            width: Fill (1, 048px)px;
+            height:auto;
+            padding: 24px 0px 0px 0px;
+            padding-bottom: 10px;
+            gap: 24px;
+            border-radius: 4px 0px 0px 0px;
+            border: 1px solid #F3F3F3;
+            opacity: 0px;
+
+            .fill-star-rated {
+                font-size: 16px;
+                margin-right: 7px;
+                color: #02400C;
+            }
+
+            .not-fill {
+                color: #ECECEC;
+            }
+
+            .rating-head {
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 16.41px;
+                // text-align: center;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+
+            }
+
+            .sub-head {
+                width: 170px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                h6 {
+                    font-family: Roboto;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 15.23px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+                    color: #8C8C8C;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+
+                }
+
+                p {
+                    font-family: Roboto;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 15.23px;
+                    padding-top: 5px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+                    color: #8C8C8C;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                }
+            }
+
+            .review-description {
+                p {
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 19.6px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+
+                }
+            }
+
+            .images {
+                display: flex;
+                gap: 10px;
+
+                img {
+                    width: 56px;
+                    height: 56px;
+                    gap: 0px;
+                    border-radius: 4.67px 0px 0px 0px;
+                    opacity: 0px;
+
+                }
+            }
+
+            .bottom-buttons {
+                text-align: right;
+                width: 100%;
+
+                .buttons {
+                    display: flex;
+                    gap: 15px;
+                    justify-content: end;
+                    text-align: right;
+
+                    button {
+                        background-color: transparent;
+                        border: none;
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 16.8px;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+                        color: #02400C;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+
+                    }
+                }
+            }
+          
+
+        }
+    }
+
+}

@@ -1,0 +1,190 @@
+.signWithOtpMainWrapper {
+    // height: 83vh;
+    padding: 10rem 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .sign-with-otp-card {
+        padding: 1.5rem;
+        width: 393px;
+        // height: 400px;
+        border: 1px solid #F3F3F3;
+        margin: auto;
+        border-radius: 4px 4px 0 0;
+
+        // background-color: red;
+        h3 {
+            font-family: Roboto;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28.13px;
+        }
+
+        label {
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14.06px;
+            color: #434343;
+        }
+
+        .emailOrPhone {
+            width: 100%;
+            border: 1px solid #B3B3B3;
+            height: 48px;
+            border-radius: 10px;
+            margin-top: 7px;
+            margin-bottom: 10px;
+            padding-left: 1rem;
+        }
+
+        .emailOrPhone:focus {
+            outline: 1px solid #5D1CAA;
+        }
+
+        .number-section input[type="checkbox"] {
+            accent-color: #298E03;
+            height: 15px;
+            width: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #999;
+            border-radius: 3px;
+            margin-right: 10px;
+            cursor: pointer;
+            position: relative;
+            outline: none;
+            background-color: white;
+        }
+
+        .sub-label {
+            padding-top: 3px;
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+            text-align: justified;
+            color: #787878;
+        }
+
+        button {
+            width: 100%;
+            height: 48px;
+            border-radius: 10px;
+            background-color: #5D1CAA;
+            color: white;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 22.4px;
+            border: 1px solid #5D1CAA;
+            margin-top: 10px;
+        }
+
+        p {
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 19.2px;
+            text-align: center;
+            color: #787878;
+            margin-top: 10px;
+        }
+
+        .underline-number-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        a {
+            color: #787878;
+        }
+
+        .ul {
+            width: 43%;
+            border-bottom: 1px solid #F3F3F3;
+        }
+
+        .google-authentication {
+            padding-top: 1rem;
+
+            .google-auth-container {
+                position: relative;
+                width: 100%;
+                height: 48px;
+                background: #F4F4F4;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+
+                img {
+                    padding-left: 2rem;
+                }
+
+                span {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 22.4px;
+                    text-align: left;
+                    color: #111111;
+                }
+            }
+        }
+    }
+
+    .sign-to-B2B-card {
+        width: 393px;
+        padding: 1rem;
+        // height: 100px;
+        border-radius: 0 0 4px 4px;
+        border: none;
+        border-left: 1px solid #F3F3F3;
+        border-bottom: 1px solid #F3F3F3;
+        border-right: 1px solid #F3F3F3;
+
+        p {
+            margin-bottom: 0 !important;
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14.06px;
+            color: #111111;
+        }
+
+        a {
+            text-decoration: none;
+            color: #5D1CAA;
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 14.4px;
+            letter-spacing: 0.02em;
+        }
+    }
+
+    @media(max-width:575px) {
+        .sign-with-otp-card {
+            width: 100%;
+        }
+
+        .google-authentication {
+            span {
+                font-size: 12px !important;
+            }
+        }
+
+        .sign-to-B2B-card {
+            width: 100%;
+        }
+    }
+}

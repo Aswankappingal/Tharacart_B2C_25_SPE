@@ -1,0 +1,971 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.All-navbar {
+    a {
+        text-decoration: none;
+    }
+
+    // .B2C {
+    //     background-color: #02400C !important;
+    // }
+
+    .NavbarMainWrapper {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 9999999999999999;
+
+
+
+        .top-navbar {
+            padding: 0 2rem;
+            display: flex;
+            height: 70px;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #6a0dad;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .top-center {
+                position: relative;
+
+                .search-bar {
+                    width: 610px;
+                    height: 45px;
+                    background-color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-right: 1rem;
+                    border-radius: 10px;
+                    overflow: hidden;
+
+                    input {
+                        width: 96%;
+                        height: 100%;
+                        border: none;
+                        padding-left: 1rem;
+                    }
+
+                    input:focus {
+                        outline: none;
+                    }
+                }
+
+                .search-suggestions {
+                    .spinner-border {
+                        font-size: 8px;
+
+                    }
+                }
+            }
+
+            .logoutBtn {
+                background-color: red !important;
+            }
+
+            .top-right {
+                display: flex;
+                gap: 2rem;
+                color: white;
+
+                .sign-in-drop-item {
+                    a {
+                        color: #6a0dad !important;
+                    }
+                }
+
+                .dropdown-menu {
+                    border-radius: 10px;
+                    width: 200px;
+
+                    .B2C {
+                        background-color: #02400C !important;
+                    }
+
+                }
+
+
+                .dowlLoadDropDown {
+                    width: 164px;
+                    padding: 9px;
+
+                    .downLoadText {
+                        //styleName: Desktop (lg = <1440px)/body-sm;
+                        font-family: Roboto;
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: 15px;
+                        text-align: center;
+                        color: #111111;
+                    }
+
+                    img {
+                        padding-top: 8px;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+
+                .cart {
+                    position: relative;
+
+                    .count {
+                        position: absolute;
+                        top: -4px;
+                        right: 0;
+                        background-color: red;
+                        width: 17px;
+                        height: 17px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        font-size: 10px;
+                    }
+                }
+
+                .sign-in-drop-item {
+                    background-color: #871bd5;
+                    width: 93%;
+                    margin: auto;
+                    height: 32px;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white !important;
+                    margin-bottom: 10px;
+
+                    a {
+                        //styleName: Desktop (lg = <1440px)/Heading 5;
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 17.5px;
+                        color: white !important;
+
+                    }
+                }
+
+                .signUp {
+                    background-color: white;
+                    color: #f6f6f6 !important;
+                    border: 1px solid #6a0dad !important;
+
+
+                    Link {
+                        color: #6a0dad !important;
+                    }
+                }
+
+                span {
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 17.5px;
+                }
+
+                .nav-icon {
+                    font-size: 20px;
+                    margin-right: 10px;
+                }
+
+                .whishList:hover {
+
+                    .nav-icon,
+                    .wish-nav:hover {
+                        color: #a2a1a3;
+                        transition: 0.3s;
+
+                    }
+                }
+
+                .cart:hover {
+                    .nav-icon {
+                        color: #a2a1a3 !important;
+                        transition: 0.3s;
+
+                    }
+
+
+
+                }
+            }
+        }
+
+        .bottom-navbar {
+            padding: 0 2rem;
+            height: 48px;
+            background-color: #6a0dad;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .category-dropdown {
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 17.5px;
+                color: #ffff;
+                cursor: pointer;
+            }
+
+            select:focus {
+                outline: none;
+            }
+
+            option {
+                background-color: #6a0dad;
+            }
+
+            .down-icon {
+                margin-left: 10px;
+                transition: .3s;
+            }
+
+            .rotate {
+                transform: rotate(180deg);
+            }
+
+            .bottom-nav-left {
+                select {
+                    border: none;
+                    background-color: transparent;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 17.5px;
+                    color: white;
+                }
+
+            }
+
+            .bottom-nav-center {
+                .nav-main {
+                    display: flex;
+                    gap: 1rem;
+
+                    .link {
+                        text-decoration: none;
+                        color: white;
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 17.5px;
+                        text-align: left;
+
+                    }
+                }
+            }
+
+            .bottom-nav-right {
+                color: white;
+                display: flex;
+                align-items: center;
+
+                .location {
+                    font-size: 25px;
+                }
+
+                select {
+                    background-color: transparent;
+                    border: none;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 17.5px;
+                    text-align: left;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    // mobile-nav
+    .mobile-navbar-main {
+        z-index: 77;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: none;
+
+        .mobile-nav {
+            width: 100%;
+            padding: 32px 1rem !important;
+            height: 60px;
+            background-color: #6a0dad !important;
+            // background-color: red;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .mob-nav-logo {
+                img {
+                    width: 40px !important;
+                }
+            }
+
+            .sign-in-drop-item {
+                background-color: #6a0dad;
+                width: 93%;
+                margin: auto;
+                height: 32px;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                margin-bottom: 10px;
+
+                a {
+                    //styleName: Desktop (lg = <1440px)/Heading 5;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 17.5px;
+
+                }
+            }
+
+            .B2B {
+                background-color: #185d05 !important;
+            }
+
+            .signUp {
+                background-color: white;
+                color: #ffffff !important;
+                border: 1px solid #6a0dad !important;
+
+                Link {
+                    color: #5e03a0 !important;
+                }
+            }
+
+            .search-bar {
+                width: 200px;
+                height: 40px;
+                background-color: white;
+                border-radius: 7px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 7px;
+
+                input {
+                    border: none;
+                    background-color: transparent;
+                    width: 85%;
+                }
+
+                input:focus {
+                    outline: none;
+                }
+
+                .lense-icon {
+                    color: #6a0dad;
+                }
+            }
+
+            .mob-nav-right {
+                margin-top: -7px;
+            }
+
+            .cart-icon {
+                font-size: 20px;
+                color: white;
+                margin-right: 1rem;
+
+            }
+
+            .bars {
+                color: white;
+                font-size: 20px;
+
+            }
+
+            .user-icon {
+                color: white;
+                font-size: 20px;
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    @media(max-width:576px) {
+        .NavbarMainWrapper {
+            display: none;
+        }
+
+        .mobile-navbar-main {
+            display: block;
+
+            .sign-in {
+                #name-mobile {
+
+                    width: 100% !important;
+                }
+
+            }
+        }
+
+        // .mob-nav-left{
+        //     position: sticky;
+        //     top: 0;
+        //     height: 100vh;
+        // }
+    }
+
+    @media(min-width:577px) and (max-width:768px) {
+
+        .NavbarMainWrapper {
+            display: none;
+        }
+
+        .mobile-navbar-main {
+            display: block;
+        }
+    }
+
+    @media(min-width:767px) and (max-width:1000px) {
+        .NavbarMainWrapper {
+            display: none;
+        }
+
+        .mobile-navbar-main {
+            display: block;
+            z-index: 99909 !important;
+        }
+
+    }
+
+    @media(min-width:1000px) and (max-width:1350px) {
+        .top-right {
+            display: flex;
+            gap: 2rem;
+            color: white;
+
+            span {
+                font-size: 12.5px !important;
+                // background-color: red;
+            }
+
+            .sign-in {
+                #sign-demo {
+                    color: #f6f6f6 !important;
+                    background-color: red !important;
+                }
+
+            }
+        }
+
+        .top-center {
+            .search-bar {
+                width: 308px !important;
+            }
+        }
+
+
+    }
+
+    /* Navbar.scss */
+    .mob-nav-left {
+        // background-color: red;
+        // display: flex;
+        padding-left: 8px;
+        // justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+
+        .bars {
+            display: none;
+        }
+    }
+
+    .sign-in-drop-item {
+        a {
+            color: #ffffff !important;
+        }
+    }
+
+    .search-bar {
+        position: relative;
+        /* Ensures suggestions are positioned relative to this container */
+    }
+
+    .nav-logo {
+        // margin: auto;
+        margin-top: 2%;
+        width: 150px;
+        padding-bottom: 7% !important;
+    }
+
+    .cart-icon {
+        margin-left: 5px;
+    }
+
+    .sign-in-drop-item {
+        background-color: #6a0dad;
+        width: 93%;
+        margin: auto;
+        height: 32px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-bottom: 10px;
+
+        a {
+            //styleName: Desktop (lg = <1440px)/Heading 5;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 17.5px;
+
+        }
+    }
+
+    .mob-nav-right {
+        .dropdown-menu {
+            .B2C {
+                background-color: #02400C !important;
+            }
+
+            .signUp {
+                color: #7c55dc !important;
+            }
+
+        }
+
+        width: 80%;
+        display: flex;
+        justify-content: right !important;
+        align-items: center;
+        gap: 5px;
+        //background: red;
+        justify-content: center;
+
+        .count {
+            position: absolute;
+            top: 12px;
+            right: 21px;
+            background-color: red;
+            color: white;
+            width: 17px;
+            height: 17px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 10px;
+
+        }
+
+    }
+
+    .sign-in {
+        padding-top: 5px;
+        font-weight: 500;
+        color: white !important;
+        padding-right: 8px;
+
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        font-family: Roboto;
+
+        span {
+            margin-left: 10px;
+        }
+
+        .nav-icon {
+            color: rgb(255, 255, 255) !important;
+            font-size: 20px !important;
+        }
+
+        a {
+            color: #ffffff !important;
+        }
+    }
+
+    .nav-bottom {
+        background-color: #6a0dad;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 15px !important;
+
+        padding: 5px;
+
+        .search-bar {
+            background-color: white;
+            display: flex;
+            width: 100%;
+            height: 35px;
+            padding: 0 10px;
+            align-items: center;
+            margin: auto;
+            border-radius: 5px;
+
+            input {
+                width: 100%;
+                // background-colo  r: RED;
+                // margin-left: 10px;
+                border: none;
+
+                input:focus {
+                    border: none;
+                    color: white;
+                    outline: none;
+                    box-shadow: none;
+                }
+
+                ::placeholder {
+                    font-family: roboto;
+
+                }
+            }
+
+            .mob-left {
+                width: 90%;
+            }
+
+            .mob-right {
+                width: 10%;
+                text-align: end;
+                padding-right: 5px;
+            }
+
+        }
+    }
+
+    .search-suggestions {
+        position: absolute;
+        /* Positions the suggestions absolutely within the search-bar container */
+        top: 100%;
+        /* Positions it right below the search bar */
+        left: 0;
+        width: 100%;
+        color: black;
+        /* Makes sure the suggestions box matches the width of the search bar */
+        background-color: white;
+        /* Ensures it stands out from the page background */
+        border: 1px solid #ddd;
+        /* Adds a border for better visibility */
+        border-radius: 4px;
+        /* Adds rounded corners */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        /* Adds a shadow for a subtle 3D effect */
+        z-index: 9;
+        /* Makes sure it appears above other content */
+        max-height: 200px;
+        /* Limits the height to avoid taking up too much space */
+        overflow-y: auto;
+        /* Adds scroll if there are too many suggestions */
+    }
+
+    .search-suggestions ul {
+        list-style: none;
+        /* Removes default list styling */
+        padding: 0;
+
+        margin: 0;
+    }
+
+    .search-suggestions li {
+        padding: 8px 12px;
+        /* Adds some padding for better spacing */
+        cursor: pointer;
+        /* Indicates that the item is clickable */
+
+        a {
+            color: black !important;
+        }
+    }
+
+    .search-suggestions li:hover {
+        background-color: #7c55dc;
+        /* Adds a hover effect for better UX */
+    }
+
+    .search-suggestions a {
+        text-decoration: none;
+        /* Removes underline from links */
+        font-weight: 500;
+
+    }
+
+    :focus {
+        outline: none;
+    }
+
+}
+
+.FooterMainWrapper {
+    margin-top: 3rem;
+
+    a {
+        text-decoration: none;
+    }
+
+    .top-footer {
+        background-color: #231832;
+        padding: 40px 30px;
+
+        .footer-left {
+
+            #tharacart-footerlogo {
+                display: none;
+            }
+
+        }
+
+        .footer-address {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.5px;
+            text-align: left;
+            color: #ffff;
+            margin-top: 20px;
+        }
+
+        .download-text {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.5px;
+            text-align: left;
+            color: #9A8FAA;
+        }
+
+        h3 {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.5px;
+            color: #9A8FAA;
+            margin-bottom: 2rem;
+        }
+
+        .footer-items {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        span {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.5px;
+            color: white;
+            margin-bottom: 10px;
+        }
+    }
+
+    .bottom-footer {
+        height: 50px;
+        background-color: #1B0F2A;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+
+        a {
+            color: white !important;
+            text-decoration: none;
+        }
+
+        span {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.5px;
+            text-align: left;
+            color: #ffff;
+        }
+
+        img {
+            width: 400px;
+        }
+    }
+
+    @media(max-width:1000px) {
+        .top-footer {
+            .footer-left {
+                img {
+                    margin-bottom: 1rem !important;
+                }
+
+                text-align: center;
+
+                p {
+                    width: fit-content;
+                    margin: auto;
+                    margin-bottom: 1rem !important;
+                }
+            }
+
+            h3 {
+                margin-bottom: 1rem;
+                margin-top: 2rem !important;
+                text-align: center !important;
+                font-size: 20px !important;
+            }
+
+            .footer-items {
+                align-items: center !important;
+            }
+        }
+
+        .bottom-footer {
+            height: 80px;
+            flex-direction: column !important;
+            justify-content: center;
+            gap: 10px;
+
+            span {
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17.5px;
+                text-align: left;
+                color: #ffff;
+            }
+
+            img {
+                width: 90%;
+            }
+        }
+    }
+
+    @media(max-width:526px) {
+
+        .footer-left {
+            #tharacart-navlogo {
+                display: none !important;
+            }
+
+            #tharacart-footerlogo {
+                display: inline !important;
+                // border: 1px solid red;
+            }
+
+        }
+
+        padding-bottom: 4rem;
+
+    }
+}
+.Aboutuswrapper {
+    width: 100%;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .about-container {
+        flex: 1;
+        margin-top: 7rem;
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+
+        .about-content {
+            max-width: 1100px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            padding: 2.5rem;
+
+            .about-title {
+                font-family: Roboto;
+                font-weight: 700;
+                font-size: 38px;
+                line-height: 47.5px;
+                letter-spacing: 0px;
+
+            }
+
+            .about-description {
+                margin-bottom: 1.5rem;
+
+                p {
+                    font-family: Roboto;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+                    letter-spacing: 0px;
+
+                }
+            }
+
+            .company-info {
+                .address-block {
+                    margin-bottom: 1.5rem;
+
+                    .company-name {
+                        font-family: Roboto;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 15px;
+                        letter-spacing: 0px;
+
+                    }
+
+                    .address {
+                        font-family: Roboto;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 15px;
+                        letter-spacing: 0px;
+
+                    }
+                }
+
+                .email-info {
+                    p {
+                        a {
+                            font-family: Roboto;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            letter-spacing: 0px;
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Responsive adjustments
+    @media (max-width: 768px) {
+        .about-container {
+            padding: 1rem;
+
+            .about-content {
+                padding: 1.5rem;
+            }
+        }
+    }
+}
