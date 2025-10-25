@@ -485,24 +485,28 @@ const SingleProdCheckoutPage = () => {
 
     const handlePayment = async (e) => {
         e.preventDefault();
+
         try {
-            // Make sure we have a selected address before proceeding
+            // Validate address selection
             if (!selectedAddress) {
                 alert("Please select a delivery address");
                 return;
             }
 
-            const { data } = await axios.post(`${baseUrl}/create-order`, { amount: 1});
+            // Create Razorpay order
+            const { data } = await axios.post(`${baseUrl}/create-order`, {
+                amount: 1
+            });
 
             const options = {
                 key: "rzp_live_lyZpWXiwjcRPKB",
                 amount: data.amount,
                 currency: "INR",
                 name: "Thara Cart Pvt.Ltd",
-                description: "Test Transaction",
+                description: "Product Purchase",
                 order_id: data.orderId,
                 handler: async function (response) {
-                    // Verify payment in backend
+                    // Payment successful - now verify and place order
                     const verificationData = {
                         razorpay_order_id: response.razorpay_order_id,
                         razorpay_payment_id: response.razorpay_payment_id,
@@ -510,13 +514,16 @@ const SingleProdCheckoutPage = () => {
                     };
 
                     try {
-                        const verificationResponse = await axios.post(`${baseUrl}/verify-payment`, verificationData);
-                        if (verificationResponse.data.status === "success") {
-                            alert("Payment Successful!");
-                            setPayment(true);
+                        const verificationResponse = await axios.post(
+                            `${baseUrl}/verify-payment`,
+                            verificationData
+                        );
 
-                            // Automatically place the order after successful payment
-                            await placeOrderAfterPayment();
+                        if (verificationResponse.data.status === "success") {
+                            // Payment verified - now place the order with payment ID
+                            await placeOrderAfterPayment(response.razorpay_payment_id,
+                                response.razorpay_order_id
+                            );
                         } else {
                             alert("Payment verification failed!");
                         }
@@ -526,17 +533,23 @@ const SingleProdCheckoutPage = () => {
                     }
                 },
                 prefill: {
-                    name: user.name || "Customer Name",
-                    email: user.email || "customer@example.com",
-                    contact: user.phone || "9999999999",
+                    name: user?.name || "Customer Name",
+                    email: user?.email || "customer@example.com",
+                    contact: user?.phone || "9999999999",
                 },
                 theme: {
                     color: "#5D1CAA",
                 },
+                modal: {
+                    ondismiss: function () {
+                        console.log("Payment cancelled by user");
+                    }
+                }
             };
 
             const razorpay = new window.Razorpay(options);
             razorpay.open();
+
         } catch (error) {
             console.error("Payment failed", error);
             alert("Failed to initiate payment. Please try again.");
@@ -544,7 +557,7 @@ const SingleProdCheckoutPage = () => {
     };
 
     // New function to place order after successful payment
-    const placeOrderAfterPayment = async () => {
+    const placeOrderAfterPayment = async (paymentId, razorpayOrderId) => {
         setOrderPlacing(true);
 
         try {
@@ -554,26 +567,43 @@ const SingleProdCheckoutPage = () => {
                 return;
             }
 
-            console.log("Coin Data Before Order:", coinData);
-            console.log("Coin Percentage:", coinData?.percentage);
+            if (!selectedAddress) {
+                alert("Please select a delivery address");
+                return;
+            }
 
-            // Create order data object matching backend expectations
+            console.log("Payment ID received:", paymentId);
+            console.log("Coin Data:", coinData);
+
+            // Create order data matching backend structure
             const orderData = {
-                paymentMode: "Pre-paid", // Set to Prepaid since payment is already complete
-                cod: false, // Not COD
+                orderId: razorpayOrderId,
+                paymentId: paymentId,
+                paymentMode: "Pre-paid", // Changed from "Pre-paid" to "Razorpay"
+                cod: false,
                 products: [{
                     id: productInnerDetails?.productDetails?.productId,
-                    quantity: quantity
+                    quantity: quantity,
+                    productNote: "" // Add product note if you have it
                 }],
                 totalPrice: finalTotal,
-                address: selectedAddress,
-                creditCoins: isRedeemingCoins ? coinData?.redeemableCoins : 0,
-                coinValue: isRedeemingCoins ? coinData?.coinValue : 0
+                address: {
+                    ...selectedAddress,
+                    // Ensure location format is correct
+                    location: {
+                        _latitude: selectedAddress.location?.latitude || selectedAddress.location?._latitude,
+                        _longitude: selectedAddress.location?.longitude || selectedAddress.location?._longitude
+                    }
+                },
+                creditCoins: isRedeemingCoins ? (coinData?.redeemableCoins || 0) : 0,
+                coinValue: isRedeemingCoins ? (coinData?.coinValue || 0.1) : 0,
+
             };
 
             console.log("Sending order data:", orderData);
 
-            const res = await axios.post(`${baseUrl}/single-product-place-order`,
+            const res = await axios.post(
+                `${baseUrl}/single-product-place-order`,
                 orderData,
                 {
                     headers: {
@@ -584,12 +614,22 @@ const SingleProdCheckoutPage = () => {
             );
 
             console.log("Order response:", res.data);
-            alert("Order placed successfully");
+
+            // Show success message
+            alert(`Order placed successfully! Order ID: ${res.data.orderId}`);
+
+            // Navigate to order completion page
             navigate(`/order-completed-page/${res.data.orderId}`);
+
         } catch (error) {
             console.error("Error placing order:", error);
             console.error("Error response:", error.response?.data);
-            alert(error.response?.data || "Error placing order. Please try again.");
+
+            // More detailed error message
+            const errorMessage = error.response?.data?.message ||
+                error.response?.data ||
+                "Error placing order. Please contact support with your payment ID.";
+            alert(errorMessage);
         } finally {
             setOrderPlacing(false);
         }
@@ -732,25 +772,32 @@ const SingleProdCheckoutPage = () => {
             }
 
             console.log("Coin Data Before Order:", coinData);
-            console.log("Coin Percentage:", coinData?.percentage);
 
-            // Create order data object matching backend expectations
+            // Create order data for COD
             const orderData = {
-                paymentMode: selectedPaymentMethod,
-                cod: cod,
+                paymentMode: "Cash on Delivery", // Ensure exact match
+                cod: true,
                 products: [{
                     id: productInnerDetails?.productDetails?.productId,
-                    quantity: quantity
+                    quantity: quantity,
+                    productNote: "" // Add if available
                 }],
                 totalPrice: finalTotal,
-                address: selectedAddress,
-                creditCoins: isRedeemingCoins ? coinData?.redeemableCoins : 0,
-                coinValue: isRedeemingCoins ? coinData?.coinValue : 0
+                address: {
+                    ...selectedAddress,
+                    location: {
+                        _latitude: selectedAddress.location?.latitude || selectedAddress.location?._latitude,
+                        _longitude: selectedAddress.location?.longitude || selectedAddress.location?._longitude
+                    }
+                },
+                creditCoins: isRedeemingCoins ? (coinData?.redeemableCoins || 0) : 0,
+                coinValue: isRedeemingCoins ? (coinData?.coinValue || 0.1) : 0
             };
 
-            console.log("Sending order data:", orderData);
+            console.log("Sending COD order data:", orderData);
 
-            const res = await axios.post(`${baseUrl}/single-product-place-order`,
+            const res = await axios.post(
+                `${baseUrl}/single-product-place-order`,
                 orderData,
                 {
                     headers: {
@@ -761,23 +808,17 @@ const SingleProdCheckoutPage = () => {
             );
 
             console.log("Order response:", res.data);
-            alert("Order placed successfully");
+            alert(`Order placed successfully! Order ID: ${res.data.orderId}`);
             navigate(`/order-completed-page/${res.data.orderId}`);
+
         } catch (error) {
             console.error("Error placing order:", error);
             console.error("Error response:", error.response?.data);
-            alert(error.response?.data || "Error placing order. Please try again.");
+            alert(error.response?.data?.message || error.response?.data || "Error placing order. Please try again.");
         } finally {
             setOrderPlacing(false);
         }
     };
-
-
-
-
-
-
-
 
 
     if (proddetailsStatus == 'loading') {

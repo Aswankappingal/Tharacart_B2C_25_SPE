@@ -882,6 +882,7 @@
             line-height: 26.25px;
             text-align: left;
             color: #5D1CAA;
+
         }
     }
 
@@ -979,6 +980,9 @@
         }
 
         .order-details {
+            #payment{
+                cursor: pointer;    
+            }
             img {
                 width: 100%;
             }

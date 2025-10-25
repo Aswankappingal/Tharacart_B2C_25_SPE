@@ -625,10 +625,9 @@ const CheckOutPage = () => {
     // };
 
     const handlePayment = async (e) => {
-        e.preventDefault()
-        // subtotal - 50
+        e.preventDefault();
         try {
-            const { data } = await axios.post(`${baseUrl}/create-order`, { amount: finalTotal });
+            const { data } = await axios.post(`${baseUrl}/create-order`, { amount: 1 }); // Change back to finalTotal
 
             const options = {
                 key: "rzp_live_lyZpWXiwjcRPKB",
@@ -638,7 +637,6 @@ const CheckOutPage = () => {
                 description: "Test Transaction",
                 order_id: data.orderId,
                 handler: async function (response) {
-                    // Verify payment in backend
                     const verificationData = {
                         razorpay_order_id: response.razorpay_order_id,
                         razorpay_payment_id: response.razorpay_payment_id,
@@ -649,22 +647,17 @@ const CheckOutPage = () => {
                     if (verificationResponse.data.status === "success") {
                         alert("Payment Successful!");
                         setPayment(true);
-
-                        // Use "Pre-paid" as the payment method
-                        await placeOrderAfterPayment("Pre-paid");
-
+                        // Pass both payment ID and Razorpay order ID
+                        await placeOrderAfterPayment(
+                            "Pre-paid",
+                            response.razorpay_payment_id,
+                            response.razorpay_order_id  // This is the Razorpay order ID
+                        );
                     } else {
                         alert("Payment verification failed!");
                     }
                 },
-                prefill: {
-                    name: user.name || "Customer Name",
-                    email: user.email || "customer@example.com",
-                    contact: user.phone || "9999999999",
-                },
-                theme: {
-                    color: "#5D1CAA",
-                },
+                // ... rest of the code
             };
 
             const razorpay = new window.Razorpay(options);
@@ -675,8 +668,11 @@ const CheckOutPage = () => {
     };
 
 
+
+
+
     // Create a new function that will be called after payment success
-    const placeOrderAfterPayment = async (paymentMethod) => {
+    const placeOrderAfterPayment = async (paymentMethod, paymentId, razorpayOrderId) => {
         setOrderPlacing(true);
 
         try {
@@ -692,6 +688,8 @@ const CheckOutPage = () => {
             }
 
             const orderData = {
+                orderId: razorpayOrderId,
+                 paymentId: paymentId, 
                 paymentMode: paymentMethod, // Will be "Pre-paid"
                 cod: false, // Set cod to false for pre-paid orders
                 products: cartProduct.map((product) => ({
@@ -702,7 +700,8 @@ const CheckOutPage = () => {
                 totalPrice: finalTotal,
                 address: selectedAddress,
                 creditCoins: isRedeemingCoins ? coinData?.redeemableCoins : 0,
-                coinValue: isRedeemingCoins ? coinData?.coinValue : 0
+                coinValue: isRedeemingCoins ? coinData?.coinValue : 0,
+               
             };
 
             const res = await axios.post(`${baseUrl}/place-order`, orderData, {
@@ -724,6 +723,12 @@ const CheckOutPage = () => {
             setOrderPlacing(false);
         }
     };
+
+    useEffect(() => {
+
+        console.log("this is my create order", placeOrderAfterPayment);
+
+    }, [])
 
     // Keep original placeOrder method for Cash on Delivery
     const placeOrder = async (e) => {
